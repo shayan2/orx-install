@@ -271,3 +271,10 @@ echo "Hotspot started."
 echo "SSID:         $SSID"
 echo "password:     $PSK"
 echo "device's IP:  $IPADDR"
+auto eth0
+inet eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet sttic
+address 10.0.0.1
+netmask 255.255.255.0
